@@ -47,6 +47,7 @@ hr{
 #ol-list{
   list-style-position: inside;
   counter-reset: list;
+  margin-right: 150px;
 }
 
 #ol-list > li{
