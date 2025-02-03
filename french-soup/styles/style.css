@@ -46,9 +46,18 @@ hr{
 
 #ol-list{
   list-style-position: inside;
-  list-style-type:lower-roman;
+  counter-reset: list;
+}
+
+#ol-list > li{
+  list-style: none;
+}
+
+#ol-list > li:before{
+  content: counter(list)")";
+  counter-increment: list;
 }
 
 #ul-list{
-list-style-type:circle;
+  list-style-type:"- ";
 }
